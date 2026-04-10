@@ -16,6 +16,7 @@
     "moduleDetection": "force",
     "jsx": "react-jsx",
     "incremental": true,
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "plugins": [
       {

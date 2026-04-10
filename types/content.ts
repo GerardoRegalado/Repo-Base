@@ -23,6 +23,13 @@ export type FeatureItem = {
   description: string;
 };
 
+export type FeatureSectionContent = {
+  eyebrow: string;
+  title: string;
+  description: string;
+  items: FeatureItem[];
+};
+
 export type PricingPlan = {
   name: string;
   description: string;
@@ -32,4 +39,35 @@ export type PricingPlan = {
 export type FaqItem = {
   question: string;
   answer: string;
+};
+
+export type ServiceItem = {
+  name: string;
+  summary: string;
+  outcome: string;
+};
+
+export type PackagePreview = {
+  name: string;
+  summary: string;
+  bestFor: string;
+};
+
+export type TestimonialItem = {
+  name: string;
+  role: string;
+  quote: string;
+};
+
+export type LeadFormField = {
+  name: string;
+  label: string;
+  type: "text" | "email" | "textarea" | "select";
+  required: boolean;
+};
+
+export type LeadFormContent = {
+  title: string;
+  description: string;
+  fields: LeadFormField[];
 };

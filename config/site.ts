@@ -7,10 +7,11 @@ export type NavigationItem = {
 
 export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com",
-  locale: "es_MX",
+  locale: process.env.NEXT_PUBLIC_SITE_LOCALE ?? "es_MX",
   defaultTitle: brandConfig.name,
   titleTemplate: `%s | ${brandConfig.name}`,
   description:
+    process.env.NEXT_PUBLIC_SITE_DESCRIPTION ??
     "Template principal para lanzar landings, sitios institucionales, SPAs ligeras y futuros SaaS con una base limpia, reusable y escalable.",
   keywords: [
     "next.js",
@@ -21,7 +22,7 @@ export const siteConfig = {
     "tailwind css",
     "typescript",
   ],
-  ogImage: "/media/og-default.svg",
+  ogImage: process.env.NEXT_PUBLIC_DEFAULT_OG_IMAGE ?? "/media/og-default.svg",
   navigation: [
     { label: "Inicio", href: "/" },
     { label: "Estructura", href: "/#structure" },

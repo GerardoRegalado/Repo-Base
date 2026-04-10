@@ -1,29 +1,28 @@
 import { Container } from "@/components/ui/container";
-import type { FeatureItem } from "@/types/content";
+import type { FeatureSectionContent } from "@/types/content";
 
 type CapabilityGridProps = {
-  items: FeatureItem[];
+  content: FeatureSectionContent;
 };
 
-export function CapabilityGrid({ items }: CapabilityGridProps) {
+export function CapabilityGrid({ content }: CapabilityGridProps) {
   return (
     <section id="structure" className="py-20">
       <Container className="space-y-10">
         <div className="max-w-3xl space-y-4">
           <p className="text-accent text-xs tracking-[0.35em] uppercase">
-            Estructura base
+            {content.eyebrow}
           </p>
           <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Todo queda listo para crecer sin sobreingeniería temprana.
+            {content.title}
           </h2>
           <p className="text-muted text-base leading-8">
-            El template separa branding, contenido, servicios y UI para poder
-            clonar el repo y adaptarlo rápido por cliente.
+            {content.description}
           </p>
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          {items.map((item) => (
+          {content.items.map((item) => (
             <article
               key={item.title}
               className="border-border bg-surface/85 rounded-[1.75rem] border p-6 shadow-[0_16px_50px_rgba(16,32,52,0.06)]"

@@ -22,6 +22,8 @@ Plantilla principal para arrancar proyectos comerciales ligeros con Next.js, Typ
 
 ```bash
 npm run dev
+npm run check
+npm run validate
 npm run lint
 npm run format
 npm run typecheck
@@ -37,8 +39,15 @@ Usa `20.19.0` o superior. El proyecto incluye `.nvmrc`.
 
 - `docs/product.md`
 - `docs/architecture.md`
+- `docs/content-model.md`
+- `docs/media-strategy.md`
+- `docs/workflow-client-to-build.md`
+- `docs/admin-panel-roadmap.md`
 - `docs/roadmap.md`
 - `docs/skills.md`
+- `docs/discovery-call-template.md`
+- `docs/proposal-template.md`
+- `docs/change-request-template.md`
 - `docs/client-brief.md`
 - `docs/quote-template.md`
 - `docs/project-scope-template.md`
@@ -57,6 +66,14 @@ services/
 tests/
 types/
 ```
+
+## Qué mejora en v1.1
+
+- Configuración de branding, site y media con variables de entorno más completas
+- Fronteras más claras entre `config/`, `content/`, `services/` y `components/sections/`
+- Placeholder operativo para la futura superficie admin
+- Documentación más cercana al flujo real de proyectos freelance
+- Baseline tests para metadata, media y readiness del template
 
 ## Nota sobre media
 

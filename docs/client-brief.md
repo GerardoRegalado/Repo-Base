@@ -2,7 +2,14 @@
 
 ## Objetivo del brief
 
-Usa este documento para transformar la información del cliente en input claro para planeación, propuesta comercial y trabajo con agentes.
+Usa este documento para transformar la información del cliente en input claro para discovery, alcance, propuesta comercial y ejecución.
+
+## Cómo usarlo dentro del workflow
+
+- Completar después de la llamada de discovery.
+- Convertirlo en un `project scope` aprobado.
+- Usarlo como base para la propuesta y la cotización.
+- Detectar temprano si el proyecto requiere admin, media management, integraciones o backend real.
 
 ## 1. Contexto general
 
@@ -18,6 +25,7 @@ Usa este documento para transformar la información del cliente en input claro p
 - ¿Necesita una landing page, sitio institucional, SPA o SaaS ligero?
 - ¿El proyecto empieza pequeño pero debe crecer a panel administrativo?
 - ¿Habrá diferentes perfiles de usuario en el futuro?
+- ¿Es un sitio para vender servicios, captar leads o soportar una operación interna?
 
 ## 3. Objetivo de negocio
 
@@ -34,6 +42,7 @@ Usa este documento para transformar la información del cliente en input claro p
 - ¿Se necesita base de datos?
 - ¿Se necesita panel administrativo?
 - ¿Qué debería poder editar el cliente por sí mismo?
+- ¿Qué queda explícitamente fuera de esta primera fase?
 
 ## 5. Contenido y branding
 
@@ -63,6 +72,7 @@ Usa este documento para transformar la información del cliente en input claro p
 - ¿Hay CRM, email marketing, analytics o chat que deban conectarse?
 - ¿Se requiere WhatsApp, HubSpot, Mailchimp, Stripe u otra herramienta?
 - ¿Existen APIs o sistemas internos que deban hablar con el sitio?
+- ¿Alguna integración debe quedar solo preparada, pero no implementada todavía?
 
 ## 9. Operación interna
 
@@ -89,6 +99,7 @@ Resume las respuestas del cliente en este formato:
 
 - Tipo de proyecto:
 - Complejidad esperada:
+- Objetivo comercial principal:
 - Necesita backend:
 - Necesita base de datos:
 - Necesita admin:
@@ -96,5 +107,6 @@ Resume las respuestas del cliente en este formato:
 - Diseño existente:
 - Contenido disponible:
 - Integraciones:
+- Entregables esperados:
 - Riesgos:
 - Siguiente recomendación técnica:

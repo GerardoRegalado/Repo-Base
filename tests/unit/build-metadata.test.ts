@@ -6,6 +6,7 @@ describe("buildMetadata", () => {
   it("returns the template title by default", () => {
     const metadata = buildMetadata();
 
+    expect(metadata.metadataBase?.toString()).toBe(`${siteConfig.url}/`);
     expect(metadata.title).toEqual({
       default: siteConfig.defaultTitle,
       template: siteConfig.titleTemplate,
@@ -23,5 +24,11 @@ describe("buildMetadata", () => {
     expect(metadata.title).toBe("Admin panel base");
     expect(metadata.alternates?.canonical).toBe("/admin");
     expect(metadata.robots).toEqual({ index: false, follow: false });
+    expect(metadata.openGraph?.images).toEqual([
+      expect.objectContaining({
+        url: `${siteConfig.url}${siteConfig.ogImage}`,
+        alt: siteConfig.defaultTitle,
+      }),
+    ]);
   });
 });

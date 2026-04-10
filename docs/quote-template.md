@@ -6,6 +6,7 @@
 - Proyecto:
 - Fecha:
 - Vigencia de la cotización:
+- Referencia a scope aprobado:
 
 ## Objetivo
 
@@ -14,6 +15,7 @@ Describe brevemente qué se construirá y qué problema resuelve.
 ## Alcance incluido
 
 - Discovery y alineación inicial
+- Definición de arquitectura base
 - Implementación frontend
 - Setup base de SEO y performance
 - Integración de contenido inicial
@@ -32,7 +34,7 @@ Describe brevemente qué se construirá y qué problema resuelve.
 
 - Repositorio del proyecto
 - Sitio funcional según alcance
-- Documentación básica
+- Documentación operativa básica
 - Hand-off inicial
 
 ## Timeline estimado
@@ -40,12 +42,14 @@ Describe brevemente qué se construirá y qué problema resuelve.
 - Inicio:
 - Revisión intermedia:
 - Entrega estimada:
+- Dependencias del cliente:
 
 ## Inversión
 
 - Total:
 - Anticipo:
 - Pago final:
+- Forma de facturación:
 
 ## Condiciones
 
@@ -53,3 +57,4 @@ Describe brevemente qué se construirá y qué problema resuelve.
 - Forma de pago:
 - Política de cambios:
 - Requisitos para iniciar:
+- Qué se considera cambio de alcance:

@@ -9,7 +9,7 @@
 
 ## Objetivo del proyecto
 
-Define la meta concreta del producto y el resultado esperado.
+Define la meta concreta del producto, el resultado esperado y la acción principal que debe lograr el usuario.
 
 ## Alcance funcional
 
@@ -19,6 +19,7 @@ Define la meta concreta del producto y el resultado esperado.
 - Integraciones
 - Panel administrativo
 - Necesidades multimedia
+- Reglas de contenido editable
 
 ## Alcance técnico
 
@@ -29,6 +30,7 @@ Define la meta concreta del producto y el resultado esperado.
 - Storage
 - Analytics
 - Deploy
+- Performance o caching requerido en esta fase
 
 ## Entregables
 
@@ -47,6 +49,8 @@ Lista aquí lo que explícitamente no forma parte del proyecto.
 - Riesgo 2:
 - Supuesto 1:
 - Supuesto 2:
+- Dependencia del cliente 1:
+- Dependencia del cliente 2:
 
 ## Criterios de aceptación
 
@@ -54,3 +58,4 @@ Lista aquí lo que explícitamente no forma parte del proyecto.
 - Las páginas incluidas funcionan según alcance.
 - El contenido acordado está integrado.
 - El cliente valida diseño y flujo principal.
+- La documentación mínima para operar y entregar el proyecto está lista.

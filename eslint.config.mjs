@@ -9,8 +9,42 @@ const eslintConfig = defineConfig([
     files: ["**/*.{ts,tsx}"],
     rules: {
       "@typescript-eslint/consistent-type-imports": [
-        "warn",
+        "error",
         { prefer: "type-imports" },
+      ],
+    },
+  },
+  {
+    files: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["@/services/*/providers/*"],
+              message:
+                "UI and route composition must depend on service contracts or entrypoints, not provider-specific adapters.",
+            },
+          ],
+        },
+      ],
+    },
+  },
+  {
+    files: ["components/sections/**/*.{ts,tsx}"],
+    rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["@/services/**"],
+              message:
+                "Marketing sections must stay content-driven and reusable. Pull data in the route or service layer first.",
+            },
+          ],
+        },
       ],
     },
   },
