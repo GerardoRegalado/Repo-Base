@@ -37,21 +37,13 @@ Usa `20.19.0` o superior. El proyecto incluye `.nvmrc`.
 
 ## Documentación
 
-- `docs/product.md`
-- `docs/architecture.md`
-- `docs/content-model.md`
-- `docs/media-strategy.md`
-- `docs/workflow-client-to-build.md`
-- `docs/admin-panel-roadmap.md`
-- `docs/roadmap.md`
-- `docs/skills.md`
-- `docs/discovery-call-template.md`
-- `docs/proposal-template.md`
-- `docs/change-request-template.md`
 - `docs/client-brief.md`
-- `docs/quote-template.md`
-- `docs/project-scope-template.md`
-- `docs/decisions.md`
+- `docs/project-scope.md`
+- `docs/quote.md`
+- `docs/development-strategy.md`
+- `docs/workflow.md`
+- `docs/skills.md`
+- `PROMPTS.md`
 
 ## Estructura rápida
 
