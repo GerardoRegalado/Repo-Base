@@ -6,6 +6,9 @@ Flujo mínimo y reusable para operar proyectos freelance con este repo base.
 
 - El cliente llena `docs/client-brief.md`.
 - Este archivo es la fuente principal de verdad para entender objetivo, alcance, restricciones, contenido, branding, integraciones y prioridad.
+- Las opciones marcadas con `[x]` deben interpretarse como seleccionadas y las opciones con `[ ]` como no seleccionadas.
+- Las respuestas en texto libre también forman parte de la fuente de verdad del brief.
+- El dominio deseado por el cliente también debe considerarse parte del discovery porque puede afectar validación y recomendaciones posteriores.
 - La estructura del brief debe mantenerse igual que el cuestionario que se comparte al cliente en Word.
 
 ## 2. Revisión comercial y cotización

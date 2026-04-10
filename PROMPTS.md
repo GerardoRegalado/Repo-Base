@@ -4,6 +4,12 @@ Read `docs/client-brief.md`.
 
 Use the information in that file as the source of truth for the client request.
 
+Interpret the brief as follows:
+- any checkbox marked as `[x]` is selected
+- any checkbox marked as `[ ]` is not selected
+- all free-text answers are part of the source of truth
+- the desired domain requested by the client is part of discovery and may affect later recommendations
+
 Then use the `pricing-strategy` skill to evaluate:
 - project type
 - complexity
@@ -51,6 +57,12 @@ Quiero que actúes como arquitecto técnico y estratega de implementación.
 
 Voy a darte el contenido de `docs/client-brief.md` o un resumen fiel de ese documento.
 
+Interpreta el brief así:
+- cualquier checkbox marcado como `[x]` está seleccionado
+- cualquier checkbox marcado como `[ ]` no está seleccionado
+- todas las respuestas en texto libre forman parte de la fuente de verdad
+- el dominio deseado por el cliente forma parte del discovery y puede afectar recomendaciones posteriores
+
 Con base en eso, necesito que generes una estrategia de desarrollo en español que luego yo pueda pegar en `docs/development-strategy.md`.
 
 La estrategia debe incluir:
@@ -76,4 +88,3 @@ Reglas:
 - piensa como si este proyecto fuera a construirse sobre un repo base en Next.js con Tailwind
 - si algo no está claro, márcalo como supuesto o riesgo
 - entrega la estrategia en formato claro y pegable en markdown
-
