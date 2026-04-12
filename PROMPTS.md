@@ -1,49 +1,102 @@
 # PROMPTS OPERATIVOS
 
-Este archivo concentra los prompts reutilizables para operar el flujo comercial y técnico del template.
+Este archivo concentra prompts reutilizables para operar el flujo comercial y técnico sin mezclar etapas.
 
-## A) Prompt comercial para Codex
+## A) Prompt para generar `docs/project-scope.md`
 
 ```md
-Actúa como estratega comercial y técnico para un proyecto web freelance.
+Actúa como estratega técnico-comercial enfocado en definición de alcance.
 
-1) Lee primero `docs/discovery.md` y úsalo como fuente principal de verdad.
-2) Interpreta el discovery así:
-   - `[x]` = seleccionado
-   - `[ ]` = no seleccionado
-   - respuestas en texto libre = fuente de verdad
-   - dominio deseado = parte del discovery y puede afectar recomendaciones
-3) Usa el skill `pricing-strategy`.
-4) Genera o actualiza:
-   - `docs/project-scope.md`
-   - `docs/quote.md`
-5) Además, crea un prompt definitivo para Stitch basado en:
-   - `docs/discovery.md`
-   - `docs/project-scope.md`
-   - `docs/quote.md`
-6) Escribe ese prompt definitivo para Stitch dentro de `PROMPTS.md`, reemplazando completamente la sección:
-   - `## C) Prompt definitivo para Stitch (generado por Codex)`
+Lee primero `docs/discovery.md` y úsalo como fuente principal de verdad.
 
-Reglas de pricing:
-- Usa mercado mexicano como referencia.
-- Usa 15 USD por hora como referencia base.
-- No lleves la cotización a nivel enterprise sin justificación real.
-- Si el cálculo sube demasiado por complejidad, seniority o tiempo estimado, pregunta primero antes de proponer un ajuste.
-- Justifica con claridad por qué sería necesario ese ajuste.
-- Mantén la propuesta realista, comercial y vendible en México.
+Interpretación obligatoria:
+- `[x]` = seleccionado
+- `[ ]` = no seleccionado
+- respuestas en texto libre = fuente de verdad
+- dominio deseado = parte del discovery
 
-Reglas de alcance:
-- No inventes features fuera del discovery.
-- Si falta información crítica, repórtala como supuesto o pendiente explícito.
-- Mantén alineación estricta entre scope y cotización.
+Con base en eso, genera o actualiza únicamente `docs/project-scope.md`.
 
-Al final de tu respuesta:
-- resume supuestos usados para cotizar
-- explica riesgos o ambigüedades detectadas
-- confirma que actualizaste `docs/project-scope.md`, `docs/quote.md` y la sección C de `PROMPTS.md`
+El scope debe definir con claridad:
+- alcance incluido
+- alcance excluido
+- supuestos
+- dependencias
+- criterios de aceptación
+
+Reglas:
+- no cotices todavía
+- no generes prompt para Stitch todavía
+- no inventes features fuera del discovery
+- si falta información crítica, declárala como supuesto o pendiente explícito
 ```
 
-## B) Prompt de development strategy para Codex (modo plan)
+## B) Prompt para generar `docs/quote.md`
+
+```md
+Actúa como estratega comercial para cotización freelance web.
+
+Lee y usa como base:
+- `docs/discovery.md`
+- `docs/project-scope.md`
+
+Usa el skill `pricing-strategy`.
+
+Genera o actualiza únicamente `docs/quote.md`.
+
+Reglas de pricing:
+- usar mercado mexicano como referencia
+- usar 15 USD por hora como referencia base
+- no llevar pricing a nivel enterprise sin justificación real
+- si el cálculo sube demasiado por complejidad, seniority o tiempo estimado, preguntar primero antes de proponer un ajuste
+- justificar claramente por qué sería necesario ese ajuste
+- mantener la cotización realista, comercial y vendible en México
+
+Además:
+- no inventar features fuera del discovery/scope
+- si falta información crítica, dejarla como supuesto o pendiente explícito
+- mantener alineación estricta con `docs/project-scope.md`
+```
+
+## C) Prompt definitivo para Stitch (generado por Codex)
+
+Uso manual:
+1. Codex reemplaza esta sección cuando se ejecute el prompt D.
+2. Copia manualmente el prompt final y pégalo en Stitch.
+3. Pega el resultado aprobado de Stitch en `docs/design.md`.
+
+Prompt final para Stitch:
+
+```md
+[Codex debe reemplazar este bloque completo con el prompt definitivo para Stitch]
+```
+
+## D) Prompt para generar el prompt de Stitch
+
+```md
+Actúa como estratega de diseño comercial y genera un prompt definitivo para Stitch.
+
+Lee obligatoriamente:
+- `docs/discovery.md`
+- `docs/project-scope.md`
+- `docs/quote.md`
+
+Objetivo:
+- crear un prompt claro, accionable y listo para copiar/pegar en Stitch
+- enfocado en producir un mockup que ayude a vender el proyecto al cliente
+
+El prompt para Stitch debe:
+- respetar estrictamente el scope aprobado
+- priorizar claridad comercial, jerarquía visual, conversión y calidad visual
+- considerar mercado mexicano
+- no inventar módulos o features fuera del alcance
+
+Acción obligatoria:
+- reemplaza completamente el contenido de la sección `## C) Prompt definitivo para Stitch (generado por Codex)` en `PROMPTS.md`
+- no modifiques otras secciones de `PROMPTS.md`
+```
+
+## E) Prompt de development strategy para Codex (modo plan)
 
 ```md
 Actúa como arquitecto técnico y planificador de implementación en modo plan.
@@ -70,48 +123,13 @@ La estrategia debe incluir:
 - qué validar manualmente en cada fase
 
 Reglas:
-- No inventes features fuera de scope.
-- Mantén enfoque MVP y evita sobreingeniería.
-- Si algo no está claro, trátalo como supuesto o riesgo.
-- Alinea la estrategia con el diseño aprobado en `docs/design.md`.
-- Entrega en markdown claro y directo, listo para guardarse en `docs/development-strategy.md`.
+- no inventes features fuera de scope
+- mantener enfoque MVP y evitar sobreingeniería
+- si algo no está claro, tratarlo como supuesto o riesgo
+- alinear la estrategia con el diseño aprobado en `docs/design.md`
 ```
 
-## C) Prompt definitivo para Stitch (generado por Codex)
-
-Estado actual: base inicial lista para reemplazo.
-
-Instrucciones de uso manual:
-1. Codex debe sobrescribir este bloque en cada corrida del Prompt comercial (sección A).
-2. Copia manualmente el prompt final de este bloque.
-3. Pégalo manualmente en Stitch.
-4. Pega el resultado aprobado de Stitch en `docs/design.md`.
-
-Prompt base Stitch (referencia inicial reutilizable):
-
-```md
-Crea un mockup de alta fidelidad para un proyecto web comercial en español.
-
-Contexto obligatorio:
-- Usa como base el discovery del cliente, el scope aprobado y la cotización aprobada.
-- Prioriza claridad comercial, jerarquía visual fuerte y conversión.
-- Respeta exactamente el alcance aprobado; no agregues módulos no autorizados.
-
-Entrega esperada:
-- estructura de secciones final
-- dirección visual (tipografía, color, estilo)
-- copy sugerido por sección
-- componentes clave y estados
-- comportamiento responsive (desktop/mobile)
-- notas de interacción necesarias para implementación
-
-Restricciones:
-- evitar sobrecargar la interfaz con elementos no solicitados
-- no inventar features fuera del scope
-- mantener consistencia con una landing/sitio vendible para mercado mexicano
-```
-
-## D) Prompt de implementación visual para Codex
+## F) Prompt de implementación visual
 
 ```md
 Actúa como implementador frontend en este repo.
@@ -132,11 +150,7 @@ Objetivo:
 Reglas:
 - no inventar nuevas secciones, features o integraciones
 - no salir del alcance aprobado en `docs/project-scope.md`
+- respetar `docs/development-strategy.md`
 - mantener arquitectura del repo y límites entre `config/`, `content/`, `components/`, `services/`
 - usar Server Components por defecto y aislar interactividad en piezas cliente cuando sea necesario
-
-Cierre:
-- reporta qué se implementó
-- reporta qué quedó pendiente por falta de información o aprobación
-- confirma validaciones ejecutadas (`lint`, `typecheck`, `test`, `build`)
 ```
