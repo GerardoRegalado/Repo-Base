@@ -1,6 +1,6 @@
 # Quote
 
-Plantilla reusable de cotización comercial en español. Puede llenarse manualmente o generarse desde `docs/discovery.md` y `docs/project-scope.md`.
+Plantilla reusable de cotización comercial en español. Puede llenarse manualmente o generarse desde `docs/client-discovery.md` y `docs/project-scope.md`.
 
 ## Encabezado
 
@@ -8,7 +8,7 @@ Plantilla reusable de cotización comercial en español. Puede llenarse manualme
 - Proyecto:
 - Fecha:
 - Vigencia de la cotización:
-- Documento fuente principal: `docs/discovery.md`
+- Documento fuente principal: `docs/client-discovery.md`
 - Documento de alcance base: `docs/project-scope.md`
 - Orden en el flujo: se define antes de design/mockup y antes de development strategy.
 

@@ -39,13 +39,12 @@ Usa `20.19.0` o superior. El proyecto incluye `.nvmrc`.
 
 ## Documentación
 
-- `docs/discovery.md`
+- `docs/client-discovery.md`
 - `docs/project-scope.md`
 - `docs/quote.md`
 - `docs/design.md`
 - `docs/development-strategy.md`
 - `docs/workflow.md`
-- `docs/branching-strategy.md`
 - `docs/skills.md`
 - `PROMPTS.md`
 

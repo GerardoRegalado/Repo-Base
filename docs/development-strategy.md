@@ -4,7 +4,7 @@ Plantilla reusable para definir la estrategia técnica y el plan de implementaci
 
 ## Contexto base
 
-- Fuente principal: `docs/discovery.md`
+- Fuente principal: `docs/client-discovery.md`
 - Scope aprobado: `docs/project-scope.md`
 - Cotización aprobada: `docs/quote.md`
 - Diseño aprobado: `docs/design.md`

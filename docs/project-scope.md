@@ -8,7 +8,7 @@ Documento reusable para cerrar el alcance aprobado antes del diseño/mockup fina
 - Proyecto:
 - Responsable:
 - Fecha:
-- Fuente principal: `docs/discovery.md`
+- Fuente principal: `docs/client-discovery.md`
 - Orden en el flujo: se define después de discovery y antes de quote, design y development strategy.
 
 ## Resumen del proyecto
@@ -37,14 +37,14 @@ Documento reusable para cerrar el alcance aprobado antes del diseño/mockup fina
 
 ## Alcance excluido
 
-- Funcionalidades no mencionadas en `docs/discovery.md`
+- Funcionalidades no mencionadas en `docs/client-discovery.md`
 - Cambios surgidos después de aprobar este alcance
 - Producción de contenido, branding o assets no confirmados
 - Integraciones, backend o panel administrativo no aprobados explícitamente
 
 ## Supuestos
 
-- El discovery en `docs/discovery.md` refleja correctamente la necesidad del cliente.
+- El discovery en `docs/client-discovery.md` refleja correctamente la necesidad del cliente.
 - El cliente entrega contenido, accesos, branding y aprobaciones a tiempo.
 - Este documento define la fase actual; cualquier ampliación se trata como nueva fase o ajuste comercial.
 

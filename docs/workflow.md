@@ -4,8 +4,8 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 
 ## 1. Discovery
 
-- El cliente llena `docs/discovery.md`.
-- `docs/discovery.md` es la fuente principal de verdad para objetivo, alcance, restricciones, contenido, branding, integraciones y prioridad.
+- El cliente llena `docs/client-discovery.md`.
+- `docs/client-discovery.md` es la fuente principal de verdad para objetivo, alcance, restricciones, contenido, branding, integraciones y prioridad.
 - Interpretación obligatoria:
   - `[x]` = seleccionado.
   - `[ ]` = no seleccionado.
@@ -14,20 +14,20 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 
 ## 2. Project Scope
 
-- Generar o actualizar `docs/project-scope.md` a partir de `docs/discovery.md`.
+- Generar o actualizar `docs/project-scope.md` a partir de `docs/client-discovery.md`.
 - Definir alcance incluido, excluido, supuestos, dependencias y criterios de aceptación.
 - `docs/project-scope.md` debe existir antes de `docs/quote.md`.
 
 ## 3. Quote
 
-- Generar o actualizar `docs/quote.md` usando `pricing-strategy`, con base en `docs/discovery.md` + `docs/project-scope.md`.
+- Generar o actualizar `docs/quote.md` usando `pricing-strategy`, con base en `docs/client-discovery.md` + `docs/project-scope.md`.
 - `docs/quote.md` debe quedar alineado al scope aprobado.
 
 ## 4. Prompt para Stitch
 
 - Generar el prompt definitivo para Stitch en una corrida separada.
 - Requiere como base:
-  - `docs/discovery.md`
+  - `docs/client-discovery.md`
   - `docs/project-scope.md`
   - `docs/quote.md`
 - El prompt final se guarda en la sección C de `PROMPTS.md`.
@@ -45,7 +45,7 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 ## 7. Implementation with Codex
 
 - Codex implementa tomando como base obligatoria:
-  - `docs/discovery.md`
+  - `docs/client-discovery.md`
   - `docs/project-scope.md`
   - `docs/quote.md`
   - `docs/design.md`
@@ -61,7 +61,7 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 
 ## Reglas operativas
 
-- `docs/discovery.md` manda sobre interpretaciones verbales o mensajes sueltos.
+- `docs/client-discovery.md` manda sobre interpretaciones verbales o mensajes sueltos.
 - `docs/project-scope.md` se cierra antes de `docs/quote.md`.
 - `docs/quote.md` se cierra antes de generar el prompt para Stitch.
 - `docs/development-strategy.md` se genera después de tener `docs/design.md`.

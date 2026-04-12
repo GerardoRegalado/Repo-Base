@@ -7,7 +7,7 @@ Este archivo concentra prompts reutilizables para operar el flujo comercial y t�
 ```md
 Actúa como estratega técnico-comercial enfocado en definición de alcance.
 
-Lee primero `docs/discovery.md` y úsalo como fuente principal de verdad.
+Lee primero `docs/client-discovery.md` y úsalo como fuente principal de verdad.
 
 Interpretación obligatoria:
 - `[x]` = seleccionado
@@ -37,7 +37,7 @@ Reglas:
 Actúa como estratega comercial para cotización freelance web.
 
 Lee y usa como base:
-- `docs/discovery.md`
+- `docs/client-discovery.md`
 - `docs/project-scope.md`
 
 Usa el skill `pricing-strategy`.
@@ -77,7 +77,7 @@ Prompt final para Stitch:
 Actúa como estratega de diseño comercial y genera un prompt definitivo para Stitch.
 
 Lee obligatoriamente:
-- `docs/discovery.md`
+- `docs/client-discovery.md`
 - `docs/project-scope.md`
 - `docs/quote.md`
 
@@ -102,7 +102,7 @@ Acción obligatoria:
 Actúa como arquitecto técnico y planificador de implementación en modo plan.
 
 Lee y usa como base obligatoria:
-- `docs/discovery.md`
+- `docs/client-discovery.md`
 - `docs/project-scope.md`
 - `docs/quote.md`
 - `docs/design.md`
@@ -138,7 +138,7 @@ Lee primero:
 - `docs/design.md`
 - `docs/project-scope.md`
 - `docs/development-strategy.md`
-- `docs/discovery.md` (solo para contexto adicional, sin ampliar scope)
+- `docs/client-discovery.md` (solo para contexto adicional, sin ampliar scope)
 
 Usa el skill `frontend-design` como apoyo para calidad visual y consistencia.
 
