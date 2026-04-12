@@ -4,9 +4,10 @@ Plantilla reusable para definir la estrategia técnica y el plan de implementaci
 
 ## Contexto base
 
-- Fuente principal: `docs/client-brief.md`
+- Fuente principal: `docs/discovery.md`
 - Scope aprobado: `docs/project-scope.md`
 - Cotización aprobada: `docs/quote.md`
+- Diseño aprobado: `docs/design.md`
 
 ## Resumen del proyecto
 
@@ -14,6 +15,7 @@ Plantilla reusable para definir la estrategia técnica y el plan de implementaci
 - Tipo de proyecto:
 - Objetivo principal:
 - Resultado esperado:
+- Versión del proyecto (si aplica):
 
 ## Recomendación técnica
 
@@ -87,6 +89,6 @@ Plantilla reusable para definir la estrategia técnica y el plan de implementaci
 ## Validación final antes de entrega
 
 - Revisar que el alcance implementado coincida con `docs/project-scope.md`
-- Confirmar que no se agregaron features fuera del brief
+- Confirmar que no se agregaron features fuera del discovery y del scope
 - Validar responsive, contenido, integraciones, metadata y flujo principal
 - Registrar pendientes como fase futura y no mezclarlos con el alcance aprobado

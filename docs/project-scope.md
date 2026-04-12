@@ -1,6 +1,6 @@
 # Project Scope
 
-Documento reusable para cerrar el alcance aprobado antes de cotizar y construir.
+Documento reusable para cerrar el alcance aprobado antes del diseño/mockup final y antes de la estrategia de desarrollo.
 
 ## Datos base
 
@@ -8,7 +8,8 @@ Documento reusable para cerrar el alcance aprobado antes de cotizar y construir.
 - Proyecto:
 - Responsable:
 - Fecha:
-- Fuente principal: `docs/client-brief.md`
+- Fuente principal: `docs/discovery.md`
+- Orden en el flujo: se define después de discovery y antes de quote, design y development strategy.
 
 ## Resumen del proyecto
 
@@ -36,14 +37,14 @@ Documento reusable para cerrar el alcance aprobado antes de cotizar y construir.
 
 ## Alcance excluido
 
-- Funcionalidades no mencionadas en `docs/client-brief.md`
+- Funcionalidades no mencionadas en `docs/discovery.md`
 - Cambios surgidos después de aprobar este alcance
 - Producción de contenido, branding o assets no confirmados
 - Integraciones, backend o panel administrativo no aprobados explícitamente
 
 ## Supuestos
 
-- El brief en `docs/client-brief.md` refleja correctamente la necesidad del cliente.
+- El discovery en `docs/discovery.md` refleja correctamente la necesidad del cliente.
 - El cliente entrega contenido, accesos, branding y aprobaciones a tiempo.
 - Este documento define la fase actual; cualquier ampliación se trata como nueva fase o ajuste comercial.
 

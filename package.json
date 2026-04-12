@@ -19,7 +19,9 @@
     "test": "vitest run",
     "test:unit": "vitest run --dir tests/unit",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "unlight:staging": "npx unlighthouse --site $UNLIGHTHOUSE_STAGING_URL",
+    "unlight:prod": "npx unlighthouse --site $UNLIGHTHOUSE_PROD_URL"
   },
   "dependencies": {
     "next": "16.2.3",

@@ -29,6 +29,8 @@ npm run format
 npm run typecheck
 npm run test
 npm run build
+npm run unlight:staging
+npm run unlight:prod
 ```
 
 ## Node recomendado
@@ -37,11 +39,13 @@ Usa `20.19.0` o superior. El proyecto incluye `.nvmrc`.
 
 ## Documentación
 
-- `docs/client-brief.md`
+- `docs/discovery.md`
 - `docs/project-scope.md`
 - `docs/quote.md`
+- `docs/design.md`
 - `docs/development-strategy.md`
 - `docs/workflow.md`
+- `docs/branching-strategy.md`
 - `docs/skills.md`
 - `PROMPTS.md`
 
