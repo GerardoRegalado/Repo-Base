@@ -5,6 +5,7 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 ## 1. Discovery
 
 - El cliente llena `docs/client-discovery.md`.
+- `docs/client-discovery.md` está pensado para clientes no técnicos y debe llenarse con lenguaje simple y ejemplos claros.
 - `docs/client-discovery.md` es la fuente principal de verdad para objetivo, alcance, restricciones, contenido, branding, integraciones y prioridad.
 - Interpretación obligatoria:
   - `[x]` = seleccionado.
@@ -21,6 +22,7 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 ## 3. Quote
 
 - Generar o actualizar `docs/quote.md` usando `pricing-strategy`, con base en `docs/client-discovery.md` + `docs/project-scope.md`.
+- La cotización debe considerar desarrollo asistido por IA/Codex como acelerador de implementación, sin omitir validación, feedback, QA y coordinación.
 - `docs/quote.md` debe quedar alineado al scope aprobado.
 
 ## 4. Prompt para Stitch

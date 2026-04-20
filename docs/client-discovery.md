@@ -1,6 +1,8 @@
 # Entrevista / Discovery para clientes
 
-Documento inicial para proyectos de landing page, sitio web, SPA o SaaS ligero
+Documento inicial para proyectos de landing page, sitio web, SPA o SaaS ligero.
+
+Está pensado para clientes no técnicos. Si una pregunta usa un término poco familiar, debajo encontrarás una explicación breve.
 
 ## Instrucciones de llenado
 
@@ -33,6 +35,13 @@ Documento inicial para proyectos de landing page, sitio web, SPA o SaaS ligero
 - [ ] Panel administrativo interno
 - [ ] Tienda en línea
 - [ ] Otro
+
+Notas rápidas:
+- `Landing page`: una página enfocada en presentar una oferta y lograr una acción, por ejemplo contacto, registro o venta.
+- `Sitio web informativo`: un sitio con varias secciones para mostrar quién eres, qué haces y cómo contactarte.
+- `SPA`: una aplicación web donde gran parte de la experiencia ocurre sin recargar páginas constantemente.
+- `SaaS / plataforma web`: un sistema al que normalmente los usuarios entran con cuenta para usar funciones del negocio.
+- `Panel administrativo interno`: un área privada para administrar contenido, promociones, clientes, leads o información operativa.
 
 ¿Cuál es el objetivo principal del proyecto?
 
@@ -88,6 +97,13 @@ Funcionalidades:
 - [ ] Membresías / suscripciones
 - [ ] Otra
 
+Notas rápidas:
+- `Integración con CRM`: conectar el sitio con una herramienta para dar seguimiento a prospectos o clientes.
+- `Panel de administración`: área privada donde tú o tu equipo pueden editar información, revisar registros o gestionar contenido.
+- `Login / usuarios`: acceso con correo y contraseña para ciertos tipos de usuarios.
+- `Base de datos`: guardar información como clientes, citas, promociones, formularios, productos u otros datos del proyecto.
+- `Membresías / suscripciones`: acceso de pago recurrente o por niveles.
+
 - Describe cualquier funcionalidad importante que no esté en la lista.
 
 ## 5. Diseño y branding
@@ -98,6 +114,9 @@ Funcionalidades:
 - ¿Ya cuentas con diseño UI / mockup / Figma?
 - Si sí, comparte enlace o indica cómo lo entregarás
 - ¿Qué estilo visual te gustaría?
+
+Nota rápida:
+- `Diseño UI / mockup / Figma`: una propuesta visual previa de cómo debería verse el sitio o sistema.
 
   - [ ] Corporativo / profesional
   - [ ] Moderno / tecnológico
@@ -140,6 +159,11 @@ Funcionalidades:
 - ¿Necesitas un panel de administración?
 - ¿Qué te gustaría poder administrar desde ese panel?
 
+Notas rápidas:
+- `Backend`: procesos internos del sistema que el usuario no ve directamente, por ejemplo cuentas, guardado de información, permisos, automatizaciones o reglas del negocio.
+- `Base de datos`: lugar donde se guarda la información del proyecto.
+- `Panel de administración`: área privada para actualizar contenido o gestionar información sin depender del desarrollador.
+
   - [ ] Textos
   - [ ] Imágenes
   - [ ] Leads / prospectos
@@ -164,11 +188,19 @@ Funcionalidades:
 - ¿Usas actualmente alguna herramienta como CRM, correo automatizado o seguimiento comercial?
 - Si sí, ¿cuál?
 
+Nota rápida:
+- `CRM`: herramienta para organizar prospectos, clientes y seguimiento comercial.
+
 ## 10. SEO, analítica e integraciones
 
 - ¿Te interesa posicionamiento en Google (SEO)?
 - ¿Necesitas analítica o medición de resultados?
 - ¿Qué integraciones necesitas?
+
+Notas rápidas:
+- `SEO`: acciones para ayudar a que tu sitio pueda aparecer mejor en buscadores como Google.
+- `Analítica`: herramientas para medir visitas, clics, formularios, ventas u otros resultados.
+- `Integraciones`: conexiones con herramientas externas como pagos, WhatsApp, agenda, correo o CRM.
 
   - [ ] Google Analytics
   - [ ] Meta Pixel

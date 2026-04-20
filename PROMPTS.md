@@ -47,10 +47,20 @@ Genera o actualiza únicamente `docs/quote.md`.
 Reglas de pricing:
 - usar mercado mexicano como referencia
 - usar 15 USD por hora como referencia base
+- considerar explícitamente que el proyecto se desarrollará con apoyo de IA/Codex
+- asumir que la implementación asistida por IA reduce tiempo frente a un desarrollo manual tradicional, sin prometer tiempos irreales
+- diferenciar entre tiempo de implementación asistida por IA y tiempo total del proyecto
+- el tiempo total del proyecto debe contemplar también diseño, validaciones, feedback, QA, ajustes y coordinación
+- usar como referencia comercial general:
+  - proyectos pequeños: 1 a 2 semanas
+  - proyectos medianos: 2 a 4 semanas
+  - solo exceder 4 semanas si el alcance realmente lo justifica
 - no llevar pricing a nivel enterprise sin justificación real
-- si el cálculo sube demasiado por complejidad, seniority o tiempo estimado, preguntar primero antes de proponer un ajuste
+- si la estimación supera 4 semanas o sube demasiado por complejidad, seniority o tiempo estimado, preguntar primero antes de proponer un ajuste
 - justificar claramente por qué sería necesario ese ajuste
-- mantener la cotización realista, comercial y vendible en México
+- mantener la cotización realista, comercial, competitiva y vendible en México
+- evitar fórmulas rígidas o promesas absurdas
+- explicar la estimación con criterio comercial, no solo técnico
 
 Además:
 - no inventar features fuera del discovery/scope
@@ -160,7 +170,7 @@ Reglas:
 ## F) Prompt de implementación por fase
 
 ```md
-Actúa como implementador frontend por fases en este repo.
+Actúa como implementador por fases en este repo.
 
 Lee primero:
 - `docs/design/README.md`
@@ -171,11 +181,14 @@ Lee primero:
 
 Usa el skill `frontend-design` como apoyo para calidad visual y consistencia.
 
+Úsalo especialmente cuando la fase incluya UI o decisiones de implementación visual. Si la fase es principalmente técnica, úsalo solo cuando realmente aporte valor.
+
 Objetivo:
 - traducir el diseño aprobado a una implementación limpia y mantenible
 - implementar únicamente una fase concreta definida en `docs/development-strategy.md`
 - mantener alta fidelidad visual contra `screen.png` y `DESIGN.md`
 - respetar estrictamente scope y estrategia
+- resolver dentro de esa fase tanto UI como lógica, wiring o integración ligera si forman parte de sus entregables
 
 Instrucción variable de ejecución:
 - el usuario debe indicar explícitamente qué fase implementar, por número o por nombre, por ejemplo: `Implementa solo la Fase 1` o `Implementa solo la fase "Landing pública"`.
@@ -183,8 +196,10 @@ Instrucción variable de ejecución:
 Modo de trabajo obligatorio:
 - lee `docs/development-strategy.md` y ubica la fase solicitada
 - implementa únicamente los entregables y criterios de esa fase
+- permite trabajo full-stack ligero dentro del alcance de esa fase, incluyendo UI, wiring de servicios, auth, backend ligero, data fetching, integraciones y lógica operativa necesaria
 - no avances a la siguiente fase aunque detectes que ya sabes cómo hacerlo
 - si detectas ambigüedad, conflicto entre diseño y strategy, o falta de definición que afecte esa fase, detente y repórtala antes de expandir alcance
+- si una fase requiere UI + lógica + wiring, resuélvelo dentro de esa misma fase siempre que esté definido en scope y strategy
 
 Reglas:
 - usar `screen.png` como referencia visual principal
@@ -199,6 +214,8 @@ Reglas:
 - usar Server Components por defecto y aislar interactividad en piezas cliente cuando sea necesario
 - implementar con alta fidelidad visual y con código limpio
 - no modificar ni implementar trabajo perteneciente a otra fase
+- no tocar auth, backend, data fetching, servicios o integraciones de otras fases si no pertenecen a la fase solicitada
+- no usar el hecho de que ya sabes cómo seguir para adelantarte
 
 Al cierre:
 - reporta qué implementaste en la fase solicitada
@@ -226,10 +243,12 @@ Objetivo:
 - corregir solo los problemas reportados en una fase ya implementada
 - no avanzar a la siguiente fase
 - respetar estrictamente scope, strategy y diseño aprobado
+- poder corregir problemas visuales, funcionales o técnicos dentro de la fase indicada
 
 Modo de trabajo obligatorio:
 - identifica la fase indicada en `docs/development-strategy.md`
 - corrige únicamente los problemas listados para esa fase
+- corrige tanto UI como lógica, wiring, auth, backend ligero, data fetching o integraciones si pertenecen a esa fase y al alcance aprobado
 - no aproveches la tarea para refactorizar, expandir alcance o tocar partes no pedidas
 - si descubres que un problema en realidad proviene de ambigüedad de diseño, conflicto con `docs/development-strategy.md` o falta de definición en scope, repórtalo explícitamente
 - si corregir un punto exige tocar algo colateral, limítalo al mínimo necesario y explícalo
@@ -242,6 +261,7 @@ Reglas:
 - no avanzar a la siguiente fase
 - no introducir mejoras no solicitadas
 - no convertir una corrección en refactor general
+- no tocar otras fases
 - no usar el diseño para justificar ampliaciones de scope
 - respetar estrictamente `docs/project-scope.md` y `docs/development-strategy.md`
 
