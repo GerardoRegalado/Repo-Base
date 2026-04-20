@@ -32,14 +32,20 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
   - `docs/quote.md`
 - El prompt final se guarda en la sección C de `PROMPTS.md`.
 
-## 5. Design / Mockup
+## 5. Exportación Stitch y guardado en `docs/design/`
 
-- El usuario copia ese prompt manualmente, lo ejecuta en Stitch y pega el resultado manualmente en `docs/design.md`.
-- `docs/design.md` queda como fuente visual aprobada para la estrategia y la implementación.
+- Stitch no se integra automáticamente con Codex.
+- El usuario copia el prompt final manualmente, lo ejecuta en Stitch y exporta un `.zip`.
+- El usuario guarda manualmente en `docs/design/` solo los artefactos relevantes y aprobados.
+- `docs/design/` reemplaza el uso anterior de `docs/design.md` como fuente principal de diseño.
+- La estructura esperada dentro de `docs/design/` es:
+  - `DESIGN.md` para el design system / visual system exportado por Stitch.
+  - una carpeta por vista aprobada.
+  - dentro de cada carpeta de vista: normalmente `screen.png` y `code.html`.
 
 ## 6. Development Strategy
 
-- Solo después de tener discovery + scope + quote + design, Codex genera `docs/development-strategy.md` (modo plan).
+- Solo después de tener discovery + scope + quote + diseño aprobado dentro de `docs/design/`, Codex genera `docs/development-strategy.md` (modo plan).
 - La estrategia define stack, arquitectura, features, riesgos, dependencias, fases, criterios de aceptación, skills y validaciones manuales.
 
 ## 7. Implementation with Codex
@@ -48,7 +54,8 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
   - `docs/client-discovery.md`
   - `docs/project-scope.md`
   - `docs/quote.md`
-  - `docs/design.md`
+  - `docs/design/README.md`
+  - los artefactos aprobados dentro de `docs/design/`
   - `docs/development-strategy.md`
 - No se deben inventar secciones, features o integraciones fuera del scope aprobado.
 
@@ -64,5 +71,5 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
 - `docs/client-discovery.md` manda sobre interpretaciones verbales o mensajes sueltos.
 - `docs/project-scope.md` se cierra antes de `docs/quote.md`.
 - `docs/quote.md` se cierra antes de generar el prompt para Stitch.
-- `docs/development-strategy.md` se genera después de tener `docs/design.md`.
+- `docs/development-strategy.md` se genera después de tener discovery + scope + quote + diseño aprobado dentro de `docs/design/`.
 - Si cambia el alcance, actualizar scope y cotización antes de seguir implementando.

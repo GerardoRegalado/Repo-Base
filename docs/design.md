@@ -1,12 +1,11 @@
-# Design / Mockup
+# Legacy Design Note
 
-Documento contenedor para pegar manualmente el resultado de diseño generado en Stitch y aprobado por cliente.
+`docs/design.md` dejó de ser la fuente principal de diseño para este repo.
 
-## Uso
+La fuente oficial ahora vive en `docs/design/`:
 
-- Pega aquí el resultado final de Stitch (estructura, copy, decisiones visuales y notas de interacción).
-- Este archivo se usa como fuente visual para `docs/development-strategy.md` y para la implementación final con Codex.
+- `docs/design/README.md`
+- `docs/design/DESIGN.md`
+- carpetas por vista exportadas desde Stitch con `screen.png` y `code.html`
 
-## Diseño aprobado
-
-Pega aquí el contenido aprobado.
+No pegues nuevos diseños aquí. Usa la carpeta `docs/design/` para cualquier export aprobado.

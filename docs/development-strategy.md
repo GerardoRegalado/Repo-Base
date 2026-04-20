@@ -7,7 +7,8 @@ Plantilla reusable para definir la estrategia técnica y el plan de implementaci
 - Fuente principal: `docs/client-discovery.md`
 - Scope aprobado: `docs/project-scope.md`
 - Cotización aprobada: `docs/quote.md`
-- Diseño aprobado: `docs/design.md`
+- Jerarquía de diseño: `docs/design/README.md`
+- Artefactos visuales aprobados: `docs/design/DESIGN.md` y carpetas por vista dentro de `docs/design/`
 
 ## Resumen del proyecto
 
