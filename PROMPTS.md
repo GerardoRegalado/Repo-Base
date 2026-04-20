@@ -157,10 +157,10 @@ Reglas:
 - si el diseño muestra algo fuera de `docs/project-scope.md`, tratarlo como desalineación y no como requisito automático
 ```
 
-## F) Prompt de implementación visual
+## F) Prompt de implementación por fase
 
 ```md
-Actúa como implementador frontend en este repo.
+Actúa como implementador frontend por fases en este repo.
 
 Lee primero:
 - `docs/design/README.md`
@@ -173,8 +173,18 @@ Usa el skill `frontend-design` como apoyo para calidad visual y consistencia.
 
 Objetivo:
 - traducir el diseño aprobado a una implementación limpia y mantenible
+- implementar únicamente una fase concreta definida en `docs/development-strategy.md`
 - mantener alta fidelidad visual contra `screen.png` y `DESIGN.md`
 - respetar estrictamente scope y estrategia
+
+Instrucción variable de ejecución:
+- el usuario debe indicar explícitamente qué fase implementar, por número o por nombre, por ejemplo: `Implementa solo la Fase 1` o `Implementa solo la fase "Landing pública"`.
+
+Modo de trabajo obligatorio:
+- lee `docs/development-strategy.md` y ubica la fase solicitada
+- implementa únicamente los entregables y criterios de esa fase
+- no avances a la siguiente fase aunque detectes que ya sabes cómo hacerlo
+- si detectas ambigüedad, conflicto entre diseño y strategy, o falta de definición que afecte esa fase, detente y repórtala antes de expandir alcance
 
 Reglas:
 - usar `screen.png` como referencia visual principal
@@ -188,4 +198,55 @@ Reglas:
 - mantener arquitectura del repo y límites entre `config/`, `content/`, `components/`, `services/`
 - usar Server Components por defecto y aislar interactividad en piezas cliente cuando sea necesario
 - implementar con alta fidelidad visual y con código limpio
+- no modificar ni implementar trabajo perteneciente a otra fase
+
+Al cierre:
+- reporta qué implementaste en la fase solicitada
+- reporta qué quedó pendiente dentro de esa misma fase, si aplica
+- reporta qué validaste
+- corre validaciones razonables según el impacto de la fase y según lo indicado en `docs/development-strategy.md`
+```
+
+## G) Prompt de correcciones por fase
+
+```md
+Actúa como implementador correctivo por fases en este repo.
+
+Lee primero:
+- `docs/project-scope.md`
+- `docs/development-strategy.md`
+- `docs/design/README.md`
+- los artefactos aprobados dentro de `docs/design/`
+
+Entrada esperada del usuario:
+- la fase afectada, por número o por nombre
+- la lista concreta de problemas detectados
+
+Objetivo:
+- corregir solo los problemas reportados en una fase ya implementada
+- no avanzar a la siguiente fase
+- respetar estrictamente scope, strategy y diseño aprobado
+
+Modo de trabajo obligatorio:
+- identifica la fase indicada en `docs/development-strategy.md`
+- corrige únicamente los problemas listados para esa fase
+- no aproveches la tarea para refactorizar, expandir alcance o tocar partes no pedidas
+- si descubres que un problema en realidad proviene de ambigüedad de diseño, conflicto con `docs/development-strategy.md` o falta de definición en scope, repórtalo explícitamente
+- si corregir un punto exige tocar algo colateral, limítalo al mínimo necesario y explícalo
+
+Reglas:
+- usar `screen.png` como referencia visual principal
+- usar `DESIGN.md` para sistema visual y lineamientos
+- usar `code.html` solo como referencia estructural
+- no copiar `code.html` directo a producción
+- no avanzar a la siguiente fase
+- no introducir mejoras no solicitadas
+- no convertir una corrección en refactor general
+- no usar el diseño para justificar ampliaciones de scope
+- respetar estrictamente `docs/project-scope.md` y `docs/development-strategy.md`
+
+Al cierre:
+- reporta qué corrigió Codex
+- reporta qué problemas no pudo corregir por ambigüedad o conflicto documental
+- reporta qué validaciones volvió a correr, si aplica
 ```

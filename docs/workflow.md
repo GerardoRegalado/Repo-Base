@@ -57,6 +57,8 @@ Flujo comercial y técnico oficial para operar este template sin sobreingenierí
   - `docs/design/README.md`
   - los artefactos aprobados dentro de `docs/design/`
   - `docs/development-strategy.md`
+- La implementación se ejecuta por fases según `docs/development-strategy.md`.
+- No se debe avanzar a la siguiente fase hasta que la fase actual quede validada o corregida.
 - No se deben inventar secciones, features o integraciones fuera del scope aprobado.
 
 ## 8. QA / Delivery
