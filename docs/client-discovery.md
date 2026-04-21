@@ -8,6 +8,7 @@ Está pensado para clientes no técnicos. Si una pregunta usa un término poco f
 
 - Marca las opciones seleccionadas con `- [x]`.
 - Deja las opciones no seleccionadas con `- [ ]`.
+- Si alguna pregunta no aplica o no están seguros, pueden dejarla en blanco.
 - Cualquier opción marcada con `[x]` debe interpretarse como seleccionada.
 - Cualquier opción marcada con `[ ]` debe interpretarse como no seleccionada.
 - Todas las respuestas en texto libre también forman parte de la fuente de verdad del brief.
@@ -39,8 +40,8 @@ Está pensado para clientes no técnicos. Si una pregunta usa un término poco f
 Notas rápidas:
 - `Landing page`: una página enfocada en presentar una oferta y lograr una acción, por ejemplo contacto, registro o venta.
 - `Sitio web informativo`: un sitio con varias secciones para mostrar quién eres, qué haces y cómo contactarte.
-- `SPA`: una aplicación web donde gran parte de la experiencia ocurre sin recargar páginas constantemente.
-- `SaaS / plataforma web`: un sistema al que normalmente los usuarios entran con cuenta para usar funciones del negocio.
+- `SPA`: una aplicación web donde la experiencia se siente más dinámica, con menos recargas entre acciones o secciones.
+- `SaaS / plataforma web`: un sistema en línea al que normalmente se entra con cuenta para usar funciones, consultar información o realizar procesos del negocio.
 - `Panel administrativo interno`: un área privada para administrar contenido, promociones, clientes, leads o información operativa.
 
 ¿Cuál es el objetivo principal del proyecto?
@@ -98,11 +99,11 @@ Funcionalidades:
 - [ ] Otra
 
 Notas rápidas:
-- `Integración con CRM`: conectar el sitio con una herramienta para dar seguimiento a prospectos o clientes.
+- `Integración con CRM`: conectar el sitio con una herramienta donde das seguimiento a prospectos o clientes para no perder su información ni su avance comercial.
 - `Panel de administración`: área privada donde tú o tu equipo pueden editar información, revisar registros o gestionar contenido.
 - `Login / usuarios`: acceso con correo y contraseña para ciertos tipos de usuarios.
 - `Base de datos`: guardar información como clientes, citas, promociones, formularios, productos u otros datos del proyecto.
-- `Membresías / suscripciones`: acceso de pago recurrente o por niveles.
+- `Membresías / suscripciones`: acceso para usuarios registrados, ya sea con pago recurrente o con distintos niveles de acceso.
 
 - Describe cualquier funcionalidad importante que no esté en la lista.
 

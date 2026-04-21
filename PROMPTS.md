@@ -50,6 +50,9 @@ Reglas de pricing:
 - considerar explícitamente que el proyecto se desarrollará con apoyo de IA/Codex
 - asumir que la implementación asistida por IA reduce tiempo frente a un desarrollo manual tradicional, sin prometer tiempos irreales
 - diferenciar entre tiempo de implementación asistida por IA y tiempo total del proyecto
+- al generar `docs/quote.md`, distinguir explícitamente ambos tiempos con etiquetas claras
+- el tiempo estimado de implementación debe cubrir la construcción técnica asistida por IA/Codex
+- el tiempo estimado total de proyecto debe contemplar también diseño, validaciones, feedback, QA, iteraciones, ajustes y coordinación
 - el tiempo total del proyecto debe contemplar también diseño, validaciones, feedback, QA, ajustes y coordinación
 - usar como referencia comercial general:
   - proyectos pequeños: 1 a 2 semanas
@@ -197,6 +200,7 @@ Modo de trabajo obligatorio:
 - lee `docs/development-strategy.md` y ubica la fase solicitada
 - implementa únicamente los entregables y criterios de esa fase
 - permite trabajo full-stack ligero dentro del alcance de esa fase, incluyendo UI, wiring de servicios, auth, backend ligero, data fetching, integraciones y lógica operativa necesaria
+- si la fase solicitada depende de entregables no completados de una fase anterior, detente y repórtalo antes de implementar
 - no avances a la siguiente fase aunque detectes que ya sabes cómo hacerlo
 - si detectas ambigüedad, conflicto entre diseño y strategy, o falta de definición que afecte esa fase, detente y repórtala antes de expandir alcance
 - si una fase requiere UI + lógica + wiring, resuélvelo dentro de esa misma fase siempre que esté definido en scope y strategy
@@ -262,8 +266,13 @@ Reglas:
 - no introducir mejoras no solicitadas
 - no convertir una corrección en refactor general
 - no tocar otras fases
+- no alterar comportamiento ya validado de esa misma fase salvo que el problema reportado realmente lo requiera
 - no usar el diseño para justificar ampliaciones de scope
 - respetar estrictamente `docs/project-scope.md` y `docs/development-strategy.md`
+
+Control de alcance por fase:
+- si una "corrección" solicitada en realidad corresponde a entregables o implementaciones de una fase futura según `docs/development-strategy.md`, repórtalo explícitamente y no lo implementes como si fuera parte de la fase actual
+- deja claro que eso no es una corrección de la fase actual sino trabajo correspondiente a una fase posterior
 
 Al cierre:
 - reporta qué corrigió Codex
